@@ -1,0 +1,22 @@
+
+> apex-blueprint@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.3
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/Configurator.tsx:120:11
+Type error: Type '{ exteriorWalls: "Concrete" | "Cedar Wood" | "White Stucco"; flooring: "Polished Marble" | "Dark Oak"; isNight: boolean; houseStyle: HouseStyle; footprint: FootprintSize; landSize: LandSize; }' is not assignable to type 'IntrinsicAttributes & ThreeCanvasProps'.
+  Property 'houseStyle' does not exist on type 'IntrinsicAttributes & ThreeCanvasProps'.
+
+[0m [90m 118 |[39m           flooring[33m=[39m{flooring} [0m
+[0m [90m 119 |[39m           isNight[33m=[39m{isNight} [0m
+[0m[31m[1m>[22m[39m[90m 120 |[39m           houseStyle[33m=[39m{houseStyle}[0m
+[0m [90m     |[39m           [31m[1m^[22m[39m[0m
+[0m [90m 121 |[39m           footprint[33m=[39m{footprint}[0m
+[0m [90m 122 |[39m           landSize[33m=[39m{landSize}[0m
+[0m [90m 123 |[39m         [33m/[39m[33m>[39m[0m
